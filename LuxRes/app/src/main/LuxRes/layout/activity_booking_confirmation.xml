@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    tools:context=".BookingConfirmationActivity">
+
+    <TextView
+        android:id="@+id/textViewConfirmationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
+        tools:text="Confirm Your Room Booking"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Item:"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/textViewConfirmItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        tools:text="Ocean View Suite"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Details:"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/textViewConfirmDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        tools:text="Check-in: Jul 5, 2025\nCheck-out: Jul 8, 2025"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price:"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/textViewConfirmPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/purple_700"
+        android:layout_marginBottom="32dp"
+        tools:text="Total Price: $1350.00"/>
+
+
+    <Button
+        android:id="@+id/buttonConfirmBooking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm Booking"/>
+
+</LinearLayout>

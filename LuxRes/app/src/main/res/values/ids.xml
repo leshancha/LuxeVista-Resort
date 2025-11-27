@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="buttonViewBookingHistory" type="id" />
+    <item name="buttonChangePassword" type="id" />
+    <item name="buttonUpdateProfile" type="id" />
+    <item name="textViewProfileEmail" type="id" />
+    <item name="textViewProfileName" type="id" />
+    <item name="textViewConfirmationTitle" type="id" />
+    <item name="textViewConfirmItemName" type="id" />
+    <item name="textViewConfirmDetails" type="id" />
+    <item name="textViewConfirmPrice" type="id" />
+    <item name="buttonConfirmBooking" type="id" />
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.luxres"> <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".LuxeVistaApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_hotel" android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_hotel" android:supportsRtl="true"
+        android:theme="@style/Theme.LuxeVista"> <activity
+        android:name=".LoginActivity"
+        android:exported="true"
+        android:theme="@style/Theme.LuxeVista.NoActionBar"> <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+    </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.LuxeVista.NoActionBar"/>
+        <activity android:name=".RegisterActivity"
+            android:theme="@style/Theme.LuxeVista.NoActionBar"/>
+        <activity android:name=".RoomListActivity" />
+
+        <activity android:name=".RoomDetailActivity"
+            android:theme="@style/Theme.LuxeVista.NoActionBar"/>
+        <activity android:name=".ServiceListActivity" />
+
+        <activity android:name=".ServiceDetailActivity"
+            android:parentActivityName=".ServiceListActivity"/>
+
+        <activity
+            android:name=".BookingConfirmationActivity"
+            android:label="Confirm Booking"
+            android:theme="@style/Theme.LuxeVista.NoActionBar" />
+        <activity android:name=".ManageBookingActivity"
+            android:label="Manage Booking"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.LuxeVista.NoActionBar" />
+
+        <activity android:name=".AttractionsActivity" />
+
+        <activity
+            android:name=".EditProfileActivity"
+            android:label="Edit Profile"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:label="Change Password"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".AttractionDetailActivity"
+            android:label="Details"
+            android:parentActivityName=".AttractionsActivity"
+            android:theme="@style/Theme.LuxeVista.NoActionBar" />
+    </application>
+
+</manifest>
+    

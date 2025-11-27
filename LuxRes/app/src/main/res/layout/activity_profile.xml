@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ProfileActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginBottom="24dp"
+        android:text="My Profile"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewProfileName"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="18sp"
+        tools:text="John Doe" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewProfileEmail"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginBottom="24dp"
+        android:textSize="18sp"
+        tools:text="john.doe@example.com" />
+
+    <Button
+        android:id="@+id/buttonUpdateProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Profile" />
+
+    <Button
+        android:id="@+id/buttonChangePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Change Password" />
+
+    <Button
+        android:id="@+id/buttonViewBookingHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="View My Bookings" />
+
+</LinearLayout>

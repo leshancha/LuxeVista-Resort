@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageViewRoom"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/room_image_desc"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" /> <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewRoom"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewRoomName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="Ocean View Suite" />
+
+        <TextView
+            android:id="@+id/textViewRoomDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            tools:text="Stunning ocean views, king bed, private balcony, and luxurious amenities." />
+
+        <TextView
+            android:id="@+id/textViewRoomPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_700"
+            tools:text="$450.00 / night" />
+
+    </LinearLayout>
+
+        <View
+            android:id="@+id/viewAvailabilityIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@id/imageViewRoom"
+            android:layout_alignBottom="@id/imageViewRoom"
+            android:layout_alignStart="@id/imageViewRoom"
+            android:layout_alignEnd="@id/imageViewRoom"
+            android:background="#80D32F2F"
+            android:visibility="gone" /> </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

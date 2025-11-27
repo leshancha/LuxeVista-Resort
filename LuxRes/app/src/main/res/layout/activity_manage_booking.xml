@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ManageBookingActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarManageBooking"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="?attr/colorOnPrimary"
+        android:elevation="4dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textViewManageItemName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?attr/textAppearanceHeadline5"
+                android:layout_marginBottom="8dp"
+                tools:text="Ocean View Suite"/>
+
+            <TextView
+                android:id="@+id/textViewManageBookingId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?attr/textAppearanceCaption"
+                android:layout_marginBottom="16dp"
+                tools:text="Booking ID: b1001"/>
+
+            <TextView
+                android:id="@+id/textViewManageCurrentDatesLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Booking Dates/Time:"
+                android:textAppearance="?attr/textAppearanceSubtitle1"/>
+
+            <TextView
+                android:id="@+id/textViewManageCurrentDates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?attr/textAppearanceBody1"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="24dp"
+                tools:text="From: 2025-07-10\nTo: 2025-07-15"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Dates/Time:"
+                android:textAppearance="?attr/textAppearanceSubtitle1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp">
+
+                <Button
+                    android:id="@+id/buttonPickStartDate"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Change Start Date"/>
+                <TextView
+                    android:id="@+id/textViewSelectedStartDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    tools:text="New Start: 2025-07-12"/>
+
+                <Button
+                    android:id="@+id/buttonPickEndDate"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    tools:text="Change End Date/Time"/>
+                <TextView
+                    android:id="@+id/textViewSelectedEndDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    tools:text="New End: 2025-07-17"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonSaveChangesBooking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Save Date Changes"
+                android:enabled="false"/>
+
+            <Button
+                android:id="@+id/buttonCancelBookingManage"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/error_color"
+                android:text="Cancel This Booking"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
